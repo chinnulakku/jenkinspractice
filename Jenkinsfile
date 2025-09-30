@@ -1,5 +1,15 @@
 pipeline {
-    agent any
+    agent {
+        node {
+            label 'AGENT-1'
+        }
+    }
+    // environment {
+    //     GREETING = 'Hello Jenkins'
+    // }
+    // options {
+    //     timeout(time:1 unit: 'HOURS')
+    //build
     stages {
         stage('Build') {
             steps {
@@ -15,6 +25,12 @@ pipeline {
             steps {
                 echo 'Deploying stage..'
             }
+        }
+    }
+    // post build
+    post {
+        always {
+            echo 'i will always say hello pipeline'
         }
     }
 }
