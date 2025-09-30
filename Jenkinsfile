@@ -1,19 +1,19 @@
-Pipeline {
+pipeline {
     agent any
     stages {
         stgae('Build') {
             steps {
-                echo "building stage .."
+                echo 'building stage ..'
             }
         }
         stage('Test') {
             steps {
-                echo "Testing stage .."
+                echo 'Testing stage ..'
             }
         }
         stage('Deploy') {
             steps {
-                echo "Deploying stage"
+                echo 'Deploying stage..'
             }
         }
     }
