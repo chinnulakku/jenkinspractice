@@ -4,12 +4,12 @@ pipeline {
             label 'AGENT-1'
         }
     }
-    // environment {
-    //     GREETING = 'Hello Jenkins'
-    // }
-    // options {
-    //     timeout(time:1 unit: 'HOURS')
-    //build
+    environment {
+        GREETING = 'Hello Jenkins'
+    }
+    options {
+        timeout(time:1 unit: 'HOURS')
+    build
     stages {
         stage('Build') {
             steps {
