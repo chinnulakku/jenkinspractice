@@ -35,7 +35,7 @@ pipeline {
         failure {
             echo 'this run when the pipleline is failed, used generally to send some alerts'
         }
-        sucess {
+        success {
             echo 'i will say hello when pipeline is success'
         }
     }
