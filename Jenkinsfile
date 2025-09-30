@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stgae('Build') {
+        stage('Build') {
             steps {
                 echo 'building stage ..'
             }
