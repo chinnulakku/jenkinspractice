@@ -32,5 +32,11 @@ pipeline {
         always {
             echo 'i will always say hello pipeline'
         }
+        failure {
+            echo 'this run when the pipleline is failed, used generally to send some alerts'
+        }
+        success {
+            echo 'i will say hello when pipeline is success'
+        }
     }
 }
