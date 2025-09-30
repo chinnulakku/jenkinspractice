@@ -23,7 +23,10 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying stage..'
+                sh """
+                    echo "here i wrote shell-script"
+                    env
+                """
             }
         }
     }
