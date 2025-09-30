@@ -9,6 +9,7 @@ pipeline {
     }
     options {
         timeout(time: 1, unit: 'HOURS')
+    }
     //build
     stages {
         stage('Build') {
